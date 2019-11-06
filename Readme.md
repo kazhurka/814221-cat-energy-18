@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ксения Кажура](https://up.htmlacademy.ru/adaptive/18/user/814221).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
