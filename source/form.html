@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <a class="main-header__logo-link"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="main-nav__item"><a href="#">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="inner-title">Подбор программы</h1>
+  </main>
+  <div class="cat-form">
+    <p>
+      Заполните анкету и мы подберем
+      программу питания для вашего кота
+    </p>
+    <label for="cat-name">Имя:*</label>
+    <input class="cat-form__name" type="text" id="cat-name">
+    <label for="cat-weight">Вес(кг):*</label>
+    <input class="cat-form__weight" type="number" id="cat-weight">
+    <label for="cat-age">Возраст(лет):</label>
+    <input class="cat-form__age" type="number" id="cat-age">
+    <div class="cat-form__radiobutton-group">
+      <label for="loose-weigth">Похудение</label>
+      <input class="cat-form__radiobutton" type="radio" name="cat-form" id="loose-weigth">
+      <label for="mass">Набор массы</label>
+      <input class="cat-form__radiobutton" type="radio" name="cat-form" id="mass">
+      <label for="no-info">Не знаю (Нужен ваш совет)</label>
+      <input class="cat-form__radiobutton" type="radio" name="cat-form" id="no-info">
+    </div>
+  </div>
+  <div class="owner-form">
+    <h2>Контактные данные (владельца кота)</h2>
+    <label for="owner-email">E-mail:*</label>
+    <input class="owner-form__e-mail" type="email" id="owner-email">
+    <label for="owner-phone">Телефон:*</label>
+    <input class="owner-form__phone" type="number" id="owner-phone">
+  </div>
+  <div class="comment-form">
+    <h2>Комментарий</h2>
+    <textarea class="comment-form__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+  </div>
+  <div class="additional-goods-form">
+    <h2>Дополнительно</h2>
+    <label for="sweetener">Сахарозаменитель</label>
+    <input class="additional-goods-form__checkbox" type="checkbox" id="sweetener">
+    <label for="water">Питьевая вода</label>
+    <input class="additional-goods-form__checkbox" type="checkbox" id="water">
+    <label for="milk">Молоко</label>
+    <input class="additional-goods-form__checkbox" type="checkbox" id="milk">
+    <label for="vitamin">Витамины</label>
+    <input class="additional-goods-form__checkbox" type="checkbox" id="vitamin">
+  </div>
+  <a href="#" class="button form-button">Отправить заявку</a>
+  <p>* — Обязательные поля</p>
+  <footer class="page-footer page-footer--index">
+    <div class="page-footer__contacts contacts">
+      <b>
+        приглашаем
+        к сотрудничеству
+        дилеров!
+      </b>
+      <p class="contacts__address">
+        ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург
+      </p>
+      <div class="contacts__map">
+      </div>
+    </div>
+    <a class="page-footer__logo-link">
+      <img class="page-footer__logo-picture">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Наш
+              Контакт</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Наш
+              Инстаграм</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Наш Фейсбук</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="#"><span class="visually-hidden">HTML Academy</span></a>
+      <img class="copyright__logo">
+    </div>
+  </footer>
+</body>
+
+</html>
