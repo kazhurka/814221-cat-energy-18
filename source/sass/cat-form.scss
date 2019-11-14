@@ -1,0 +1,64 @@
+.cat-form {
+  width: 320px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  font-family: "Oswald","Arial","sans-serif";
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+
+
+.cat-form__text {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-family: "Oswald","Arial","sans-serif";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.cat-form__name {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 229px;
+  height: 45px;
+  margin-bottom: 10px;
+  list-style: none;
+  display: block;
+  border: 1px solid #cdcdcd;
+}
+.cat-form__wrapper {
+  display: flex;
+
+}
+.cat-form__weight {
+  margin: 0;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 204px;
+  list-style: none;
+  display: block;
+  border: 1px solid #cdcdcd;
+}
+.cat-form__age {
+  margin: 0;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 172px;
+  list-style: none;
+  display: block;
+  border: 1px solid #cdcdcd;
+
+}

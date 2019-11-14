@@ -1,0 +1,50 @@
+.main-nav {
+  position: relative;
+  font-family: "Oswald", "Arial",sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.main-nav a {
+  color: #111111;
+  list-style: none;
+  text-decoration: none;
+}
+.main-nav__list {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  box-sizing: border-box;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #111111;
+}
+
+.main-nav__button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: -35px;
+  right: 0px;
+  display: block;
+  width: 25px;
+  height: 19px;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+

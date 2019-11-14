@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts b {
+  display: block;
+  margin-right: 15px;
+  list-style: none;
+  font-weight: normal;
+  font-family: "Oswald","Arial","sans-serif";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.contacts__address {
+  margin: 0;
+  padding: 0;
+}

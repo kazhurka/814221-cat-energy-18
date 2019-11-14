@@ -1,0 +1,33 @@
+.owner-form {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+
+}
+.owner-form input {
+  margin: 0;
+  list-style: none;
+  border: 1px solid #cdcdcd;
+  height: 45px;
+
+}
+.owner-form__header {
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #111111;
+}
+.owner-form__wrapper {
+  display: flex;
+}

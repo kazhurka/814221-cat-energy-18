@@ -1,0 +1,43 @@
+.ration-programs__button {
+margin-bottom: 20px;
+display: block;
+}
+.ration-programs__item {
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+.ration-programs__header {
+  margin: 0;
+  list-style: none;
+  font-family: "Oswald","Arial","sans-serif";
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-align: left;
+  color: #111111;
+}
+
+.ration-programs__description {
+  font-family: "Arial","sans-serif";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+
+}
+.ration-programs__link {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Oswald","Arial","sans-serif";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
