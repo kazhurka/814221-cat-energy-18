@@ -1,0 +1,13 @@
+.page-footer {
+  display: flex;
+  padding-bottom: 30px;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo-link {
+  margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
+}

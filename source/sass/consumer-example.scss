@@ -1,0 +1,66 @@
+.consumer-example {
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.consumer-example__header {
+  display: block;
+  margin: 0;
+  margin-bottom: 36px;
+  list-style: none;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  text-align: left;
+}
+
+.consumer-example__description {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.consumer-example__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "sans-serif";
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: #444444;
+  text-align: center;
+}
+
+.consumer-example__number {
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.consumer-example__cost {
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.consumer-example__toggle span {
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+}
