@@ -1,4 +1,6 @@
 .owner-form {
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
@@ -8,15 +10,19 @@
   line-height: 18px;
   text-align: left;
   color: #222222;
+  text-transform: uppercase;
 
 }
+
 .owner-form input {
+  box-sizing: border-box;
   margin: 0;
   list-style: none;
   border: 1px solid #cdcdcd;
   height: 45px;
 
 }
+
 .owner-form__header {
   margin: 0;
   margin-bottom: 20px;
@@ -28,6 +34,116 @@
   text-align: left;
   color: #111111;
 }
+
 .owner-form__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.owner-form label {
+  display: block;
+  min-width: 50px;
+}
+
+.owner-form .owner-form__e-mail {
+  width: 219px;
+}
+
+.owner-form__phone {
+  width: 204px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-form {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 70px;
+    padding-right: 60px;
+    min-width: 768px;
+    margin-bottom: 70px;
+  }
+
+  .owner-form .owner-form__e-mail {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 551px;
+    padding-right: 50px;
+  }
+
+
+  .owner-form__header {
+    text-transform: none;
+    font-size: 36px;
+    line-height: 36px;
+    color: #111111;
+    margin-bottom: 70px;
+  }
+
+  .owner-form__phone {
+    position: relative;
+    min-width: 535px;
+    padding-right: 50px;
+  }
+   .owner-form__wrapper {
+     position: relative;
+   }
+  .owner-form__wrapper::after {
+    content:"";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .owner-form__wrapper--phone::after {
+    background-image: url("../img/icon-phone.svg");
+    width:21px;
+    height: 21px;
+    top: 11px;
+    left: 600px;
+    background-color: transparent;
+  }
+
+  .owner-form__wrapper--email::after {
+    background-image: url("../img/icon-mail.svg");
+    width: 18px;
+    height: 14px;
+    top: 13px;
+    left: 600px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-form {
+    padding-left: 110px;
+    padding-right: 110px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 1440px;
+    justify-content: space-between;
+  }
+  .owner-form__header {
+    width: 100%;
+  }
+   .owner-form .owner-form__e-mail {
+    min-width: 486px;
+    margin-left: auto;
+  }
+  .owner-form .owner-form__phone {
+    min-width: 472px;
+    margin-left: auto;
+  }
+  .owner-form__wrapper {
+    min-width: 580px;
+  }
+  .owner-form__wrapper--email::after {
+    left: 550px;
+  }
+
+  .owner-form__wrapper--phone::after {
+    left: 550px;
+  }
 }

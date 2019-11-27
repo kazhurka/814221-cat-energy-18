@@ -1,7 +1,12 @@
 .contacts {
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+
 }
 
 .contacts b {
@@ -17,4 +22,37 @@
 .contacts__address {
   margin: 0;
   padding: 0;
+}
+contacts__map {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-width: 768px;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .contacts b {
+    width: 154px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  .contacts__address {
+    font-size:  16px;
+    line-height: 20px;
+    text-align: right;
+    width: 155px;
+  }
+
+  .contacts__address span {
+    display: block;
+    margin-top: 10px;
+  }
+
 }

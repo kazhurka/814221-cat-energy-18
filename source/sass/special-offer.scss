@@ -1,9 +1,65 @@
 .special-offer {
-  min-width: 320px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 190px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 280px;
+  min-height: 289px;
   background-color: #68b738;
   color: #ffffff;
-  font-family: "Arial","sans-serif";
+  font-family: "Arial", "sans-serif";
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.special-offer::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 115px;
+  width: 56px;
+  height: 61px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
+.special-offer p {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 75px;
+    padding-right: 75px;
+    min-height: 200px;
+    width: 708px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-bottom: 46px;
+  }
+
+  .special-offer p {
+
+    margin-left: auto;
+    width: 159px;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    box-sizing: border-box;
+    margin-top: 75px;
+    width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    height: 289px;
+  }
 }

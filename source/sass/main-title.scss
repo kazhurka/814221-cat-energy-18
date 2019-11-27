@@ -1,6 +1,7 @@
 .main-title {
   margin: 0;
   padding: 0;
+  margin-bottom: 18px;
   list-style: none;
   font-family: "Oswald","Arial","sans-serif";
   font-size: 36px;
@@ -8,4 +9,16 @@
   line-height: 36px;
   text-align: center;
   color: white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    padding-left: 90px;
+    margin-bottom: 30px;
+    width: 425px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
 }
