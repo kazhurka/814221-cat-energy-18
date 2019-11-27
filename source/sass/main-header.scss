@@ -1,7 +1,34 @@
 .main-header {
-  width: 320px;
+  min-width: 320px;
 }
 .main-header a {
   text-decoration: none;
   list-style: none;
+}
+
+.main-header__logo-link {
+  padding-left: 20px;
+}
+@media (min-width: $tablet-width) {
+.main-header {
+  width: 100%;
+  display: flex;
+}
+.main-header a {
+  padding: 0;
+}
+.main-header .main-header__logo-link {
+  margin-right: 50px;
+  padding-left: 30px;
+}
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    position: relative;
+    padding-top: 75px;
+    align-items: baseline;
+  }
+
+
 }

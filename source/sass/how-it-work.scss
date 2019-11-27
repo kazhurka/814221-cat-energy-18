@@ -4,7 +4,7 @@
   margin-bottom: 36px;
   list-style: none;
   font-weight: normal;
-  font-family: "Oswald","Arial","sans-serif";
+  font-family: "Oswald", "Arial", "sans-serif";
   font-size: 36px;
   line-height: 60px;
   color: #111111;
@@ -12,10 +12,103 @@
 }
 
 .how-it-work__item {
-  padding-left: 65px;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 70px;
   margin-bottom: 30px;
 }
+
+.how-it-work__item::before {
+  content: "";
+  top: 5px;
+  left: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-it-work__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.how-it-work__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.how-it-work__item--food::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.how-it-work__item--time::before {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 .how-it-work__text {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .how-it-work__header {
+    margin-bottom: 60px;
+  }
+
+  .how-it-work__item {
+    min-width: 200px;
+    padding-top: 115px;
+    min-height: 230px;
+    width: 220px;
+    padding-left: 0;
+    margin-right: 25px;
+  }
+
+
+  .how-it-work__header {
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-it-work__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-it-work__item::after {
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+    left: 105px;
+    font-size: 281px;
+    font-family: "Oswald","Arial","sans-serif";
+    line-height: 281px;
+    color: #f2f2f2;
+    font-stretch: ultra-condensed;
+  }
+
+  .how-it-work__item--food::after {
+    content: "3";
+  }
+
+  .how-it-work__item--leaf::after {
+    content: "1";
+  }
+
+  .how-it-work__item--powder::after {
+    content: "2";
+  }
+
+  .how-it-work__item--time::after {
+    content: "4";
+  }
 }

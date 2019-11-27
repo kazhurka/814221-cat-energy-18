@@ -1,19 +1,67 @@
 .intro {
   width: 100%;
+  padding-top: 29px;
+  min-height: 500px;
   margin: 0 auto;
-  min-height: 305px;
-  background-color: green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 200px, 0 0;
+  background-size: auto, auto;
 }
+
 .intro__slogan {
   display: block;
-  font-family: "Oswald","Arial","sans-serif";
+  font-family: "Oswald", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
+}
+
+.intro__button {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 335px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 800px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 0 300px;
+    background-repeat: no-repeat;
+  }
+
+  .intro__slogan {
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
+  .intro .intro__button {
+    margin-left: 90px;
+    margin-top: 125px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 245px;
+    height: 52px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 35px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    min-height: 499px;
+    background-position: 50% 35px ;
+  }
+
 }

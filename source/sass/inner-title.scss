@@ -8,3 +8,20 @@
   text-align: center;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-title {
+    padding-top: 60px;
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-title {
+    padding-left: 110px;
+
+  }
+}

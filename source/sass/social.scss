@@ -1,4 +1,5 @@
 .social__list {
+  min-width: 130px;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -9,5 +10,28 @@
   padding-right: 70px;
   margin-bottom: 37px;
 
+}
 
+@media (min-width: $tablet-width) {
+  .social {
+    min-width: 200px;
+  }
+  .social__list {
+    margin-bottom: 0;
+  }
+
+  .social__link--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
 }
