@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 200px, 0 0;
+  background-position: 21px 165px, 0 0;
   background-size: auto, auto;
 }
 
@@ -58,7 +58,9 @@
 }
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 35px;
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 27px;
     background-image: url("../img/index-can-desktop@1x.png");
     min-height: 499px;
     background-position: 50% 35px ;

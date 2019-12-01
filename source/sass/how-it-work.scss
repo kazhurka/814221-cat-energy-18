@@ -53,10 +53,12 @@
 
 @media (min-width: $tablet-width) {
   .how-it-work {
+    width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
+    box-sizing: border-box;
   }
 
   .how-it-work__header {
@@ -110,5 +112,11 @@
 
   .how-it-work__item--time::after {
     content: "4";
+  }
+}
+@media (min-width: $desktop-width) {
+  .how-it-work {
+
+    width: 1440px;
   }
 }
