@@ -142,7 +142,7 @@
     background-color:#ffffff;
   }
   }
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
   .consumer-example__description {
   width: 430px;
   }
@@ -172,4 +172,17 @@
      line-height: 14px;
 
    }
+}
+
+@media (min-width: $desktop-width){
+  .consumer-example {
+    position: relative;
+    width:1440px;
+  }
+  .consumer-example__before-after {
+    position: absolute;
+    width: 720px;
+    top: -10px;
+    left: 720px;
+  }
 }

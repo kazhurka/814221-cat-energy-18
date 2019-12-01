@@ -4,9 +4,10 @@ body {
   line-height: 24px;
   font-family: "Arial", sans-serif;
   color: #444444;
-
+  margin: 0;
   background-color: #ffffff;
 }
+
 
 @media (min-width: $desktop-width) {
   .wrapper {

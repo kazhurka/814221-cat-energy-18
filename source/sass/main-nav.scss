@@ -1,4 +1,5 @@
 .main-nav {
+  // display: none;
   position: relative;
   font-family: "Oswald", "Arial",sans-serif;
   font-weight: 500;
@@ -83,19 +84,10 @@
   .main-nav__item {
     border-bottom: none;
   }
-  .main-nav a {
+
+  .main-nav--index a {
     color: #ffffff;
   }
-  // .main-nav ::after {
-  //   z-index: -1;
-  //   content:"";
-  //   width: 720px;
-  //   height: 696px;
-  //   position: absolute;
-  //   background-image: url("../img/index-background-desktop@1x.jpg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0 ;
-  // }
 
 
 }
