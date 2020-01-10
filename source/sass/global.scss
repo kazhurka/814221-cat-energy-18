@@ -8,13 +8,39 @@ body {
   background-color: #ffffff;
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.input-error {
+  border: #ff8282;
+}
+
+.wrap-background {
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 11px, #68b738 11px, #68b738 14px, #ffffff 14px);
+}
+
+@media (min-width: $tablet-width) {
+  .wrap-background {
+    background-image: linear-gradient(#ffffff 21px, #68b738 21px, #68b738 24px, #ffffff 24px);
+  }
+}
 
 @media (min-width: $desktop-width) {
   .wrapper {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
     width: 100%;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: 100% 0 ;
+    height: 696px;
+    margin: 0 auto;
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-position: 109% 0;
     background-repeat: no-repeat;
-
+    background-size: 54% 100%;
   }
+
+
 }

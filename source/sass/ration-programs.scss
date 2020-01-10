@@ -1,10 +1,15 @@
+.ration-programs {
+
+  width: 320px;
+  box-sizing: border-box;
+}
 .ration-programs__item {
   position: relative;
-
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-right: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-left: 20px;
 
   background-color: #f2f2f2;
@@ -15,7 +20,7 @@
 .ration-programs__header {
   margin: 0;
   padding-left: 70px;
-
+  margin-bottom: 30px;
   list-style: none;
   font-weight: normal;
   font-size: 24px;
@@ -23,14 +28,15 @@
   font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
   color: #111111;
+  text-transform: uppercase;
 }
 
 
 .ration-programs__item--slim .ration-programs__header::after {
   content: "";
   position: absolute;
-  top: 24px;
-  left: 20px;
+  top: 27px;
+  left: 21px;
 
   width: 51px;
   height: 51px;
@@ -43,7 +49,7 @@
 .ration-programs__item--slim .ration-programs__header::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 25px;
   left: 30px;
   z-index: 1;
 
@@ -71,8 +77,8 @@
 .ration-programs__item--pro .ration-programs__header::before {
   content: "";
   position: absolute;
-  top: 37px;
-  left: 9px;
+  top: 36px;
+  left: 13px;
   z-index: 1;
 
   width: 67px;
@@ -83,6 +89,8 @@
 }
 
 .ration-programs__description {
+  margin: 0;
+  margin-bottom: 41px;
   position: relative;
   font-weight: normal;
   font-size: 14px;
@@ -115,24 +123,36 @@
   z-index: 1;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
-  background-position: 0 0 ;
-  top: 10px;
-  left: 130px;
+  background-position: 0 0;
+  top: 7px;
+  left: 96px;
   background-color: transparent;
 }
 
-
+ .ration-programs__link:hover::after {
+ background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+.ration-programs__link:active {
+  opacity: 30%;
+}
 @media (min-width: $tablet-width) {
+.ration-programs {
+  width: 768px;
+  box-sizing: border-box;
+  margin-bottom: 46px;
+}
   .ration-programs__item {
     box-sizing: border-box;
     min-height: 372px;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-right: 285px;
     padding-left: 52px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .ration-programs__header {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     padding-left: 0;
 
     font-size: 36px;
@@ -141,99 +161,120 @@
   }
 
   .ration-programs__description {
-    margin-bottom: 60px;
-
+    margin-bottom: 57px;
+    width: 372px;
     font-size: 16px;
     line-height: 24px;
   }
-
+  .ration-programs__item--pro .ration-programs__description {
+    width: 340px;
+  }
   .ration-programs__item--slim .ration-programs__header::after {
-    top: 90px;
-    left: 448px;
+    top: 25%;
+    left: 63%;
 
     width: 200px;
     height: 200px;
   }
 
   .ration-programs__item--pro .ration-programs__header::after {
-    top: 90px;
-    left: 448px;
+    top: 25%;
+    left: 63.3%;
 
     width: 200px;
     height: 200px;
   }
 
   .ration-programs__item--pro .ration-programs__header::before {
-    top: 135px;
-    left: 420px;
+    top: 36.4%;
+    left: 58.1%;
 
     width: 268px;
     height: 113px;
   }
 
   .ration-programs__item--slim .ration-programs__header::before {
-    top: 77px;
-    left: 475px;
+    top: 22%;
+    left: 67.2%;
 
     width: 141px;
     height: 194px;
   }
 
   .ration-programs__link {
+    display: block;
     font-size: 20px;
     line-height: 20px;
+    min-width: 200px;
+  }
+  .ration-programs__link::after {
+    top: 5px;
+    left: 131px;
+  }
+  .ration-programs__item--pro .ration-programs__link::after {
+    left:125px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .ration-programs {
-    width: 1440px;
+    width: 1300px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 44px;
     padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
   }
+
   .ration-programs__header {
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     padding: 0;
-
-    text-align: center;
+    padding-left: 162px;
   }
+
   .ration-programs__item {
     box-sizing: border-box;
     width: 570px;
     padding-right: 50px;
   }
+  .ration-programs__item--pro .ration-programs__description {
+    width: 450px;
+  }
 
+  .ration-programs__description {
+    width: 465px;
+    margin-bottom: 31px;
+  }
   .ration-programs__item--slim .ration-programs__header::after {
-    top: 50px;
-    left: 40px;
+    top: 48px;
+    left: 52px;
 
     width: 100px;
     height: 100px;
   }
 
   .ration-programs__item--pro .ration-programs__header::after {
-    top: 50px;
-    left: 40px;
+    top: 48px;
+    left: 52px;
 
     width: 100px;
     height: 100px;
   }
 
   .ration-programs__item--pro .ration-programs__header::before {
-    top: 67px;
-    left: 22px;
+    top: 69px;
+    left: 34px;
 
     width: 134px;
     height: 57px;
   }
 
   .ration-programs__item--slim .ration-programs__header::before {
-    top: 47px;
-    left: 56px;
+    top: 41px;
+    left: 66px;
 
     width: 71px;
     height: 97px;

@@ -1,17 +1,22 @@
 .inner-title {
   margin: 0;
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 17px;
+  padding-left: 20px;
   list-style: none;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   color: #111111;
 }
 
 @media (min-width: $tablet-width) {
   .inner-title {
-    padding-top: 60px;
+    width: 768px;
+    padding-top: 45px;
     padding-left: 30px;
     font-size: 60px;
     line-height: 60px;
@@ -19,4 +24,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .inner-title {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 59px;
 
+  }
+}
