@@ -1,7 +1,7 @@
 .special-offer {
   position: relative;
   box-sizing: border-box;
-  padding-top: 190px;
+  padding-top: 187px;
   padding-left: 60px;
   padding-right: 60px;
   width: 280px;
@@ -16,13 +16,14 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  margin-bottom: 35px;
 }
 
 .special-offer::before {
   content: "";
   position: absolute;
-  top: 70px;
-  left: 115px;
+  top: 66px;
+  left: 113px;
   width: 56px;
   height: 61px;
   background-image: url("../img/icon-gift.svg");
@@ -31,25 +32,29 @@
 
 .special-offer p {
   margin: 0;
+  width: 161px;
 }
 
 @media (min-width: $tablet-width) {
   .special-offer {
     box-sizing: border-box;
     padding: 0;
-    padding-top: 75px;
-    padding-right: 75px;
+    padding-top: 72px;
+    padding-right: 123px;
     min-height: 200px;
     width: 708px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    margin-bottom: 46px;
+    margin-bottom: 77px;
   }
 
   .special-offer p {
 
     margin-left: auto;
-    width: 159px;
+    width: 161px;
     text-align: left;
+  }
+  .special-offer::before {
+    left: 91px;
   }
 
 }
@@ -61,5 +66,17 @@
     width: 245px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     height: 289px;
+    padding-top: 190px;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-bottom: 0;
+  }
+
+  .special-offer p {
+    text-align: center;
+
+  }
+  .special-offer::before {
+    left: 38%;
   }
 }

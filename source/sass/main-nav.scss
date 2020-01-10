@@ -1,7 +1,7 @@
 .main-nav {
   // display: none;
   position: relative;
-  font-family: "Oswald", "Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -16,6 +16,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 .main-nav__list {
   min-width: 320px;
   margin: 0;
@@ -31,6 +32,15 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #cdcdcd;
 }
+
+.main-nav__item:hover a {
+  opacity: 60%;
+}
+
+.main-nav__item:active a {
+  opacity: 30%;
+}
+
 
 .main-nav__button {
   position: absolute;
@@ -54,39 +64,60 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+    padding-left: 44px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
   }
+
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
-    min-width: 500px;
+    min-width: 439px;
   }
 
   .main-nav__item {
-    padding-left: 30px;
+    padding-left: 0;
     padding-right: 0;
+    border-bottom: none;
+    padding-bottom: 8px;
   }
 
   .main-nav__button {
     display: none;
+  }
+
+  .main-nav .main-nav__item--active-inner {
+    border-bottom: 2px solid #68b738;
+  }
+  .main-nav .main-nav__item--active {
+    border-bottom: 2px solid #68b738;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     margin-left: auto;
-    padding-right: 110px;
     font-size: 20px;
     line-height: 25px;
     background-color: transparent;
 
   }
+  .main-nav__list {
+    min-width: 479px;
+  }
+
   .main-nav__item {
+    padding-top: 0;
     border-bottom: none;
   }
 
   .main-nav--index a {
     color: #ffffff;
+  }
+
+  .main-nav--index .main-nav__item--active {
+    border-bottom: 2px solid #ffffff;
   }
 
 

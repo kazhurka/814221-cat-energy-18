@@ -1,12 +1,19 @@
+.how-it-work {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 47px;
+}
+
 .how-it-work__header {
   display: block;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   list-style: none;
   font-weight: normal;
   font-family: "Oswald", "Arial", "sans-serif";
   font-size: 36px;
-  line-height: 60px;
+  line-height: 52px;
   color: #111111;
   text-align: left;
 }
@@ -14,13 +21,13 @@
 .how-it-work__item {
   box-sizing: border-box;
   position: relative;
-  padding-left: 70px;
-  margin-bottom: 30px;
+  padding-left: 80px;
+  margin-bottom: 27px;
 }
 
 .how-it-work__item::before {
   content: "";
-  top: 5px;
+  top: -3px;
   left: 0;
   position: absolute;
   width: 60px;
@@ -49,6 +56,8 @@
 .how-it-work__text {
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,24 +65,43 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    // justify-content: space-between;
+    margin-bottom: 8px;
     box-sizing: border-box;
+    color: #444444;
   }
 
   .how-it-work__header {
     margin-bottom: 60px;
   }
 
-  .how-it-work__item {
-    min-width: 200px;
-    padding-top: 115px;
-    min-height: 230px;
-    width: 220px;
-    padding-left: 0;
-    margin-right: 25px;
+  .how-it-work__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
   }
 
+  .how-it-work__item {
+    min-width: 200px;
+    padding-top: 123px;
+    min-height: 230px;
+    width: 222px;
+    padding-left: 0;
+    margin-right: 25px;
+    margin-bottom: 87px;
+  }
+
+  .how-it-work__item--leaf {
+    margin-right: 163px;
+  }
+
+  .how-it-work__item--food {
+    margin-right: 162px;
+  }
+
+  .how-it-work__item--time {
+    width: 245px;
+  }
 
   .how-it-work__header {
     width: 100%;
@@ -84,15 +112,15 @@
   .how-it-work__item::before {
     width: 80px;
     height: 80px;
+    top: 11px;
   }
 
   .how-it-work__item::after {
     z-index: -1;
     position: absolute;
-    top: -30px;
-    left: 105px;
+    top: -29px;
     font-size: 281px;
-    font-family: "Oswald","Arial","sans-serif";
+    font-family: "Oswald", "Arial", "sans-serif";
     line-height: 281px;
     color: #f2f2f2;
     font-stretch: ultra-condensed;
@@ -100,23 +128,47 @@
 
   .how-it-work__item--food::after {
     content: "3";
+    left: 113px;
   }
 
   .how-it-work__item--leaf::after {
     content: "1";
+    left: 118px;
   }
 
   .how-it-work__item--powder::after {
     content: "2";
+    left: 110px;
   }
 
   .how-it-work__item--time::after {
     content: "4";
+    left: 113px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .how-it-work {
 
-    width: 1440px;
+    width: 1300px;
+    margin-bottom: 0;
+
   }
+
+  .how-it-work__item {
+    margin-right: 0;
+  }
+
+  .how-it-work__item--leaf {
+    margin-right: 103px;
+  }
+
+  .how-it-work__item--powder {
+    margin-right: 103px;
+  }
+
+  .how-it-work__item--food {
+    margin-right: 103px;
+  }
+
 }

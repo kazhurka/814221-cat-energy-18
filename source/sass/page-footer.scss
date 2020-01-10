@@ -2,7 +2,6 @@
   display: flex;
   padding-bottom: 30px;
   flex-direction: column;
-  padding-top: 30px;
 }
 
 .page-footer__logo-link {
@@ -10,7 +9,17 @@
   margin: 0 auto;
   text-decoration: none;
   list-style: none;
+  margin-bottom: 44px;
 }
+
+.page-footer__logo-link:hover {
+  opacity: 80%;
+}
+
+.page-footer__logo-link:active {
+  opacity: 60%;
+}
+
 .page-footer__wrapper {
   padding-right: 20px;
   padding-left: 20px;
@@ -18,48 +27,94 @@
   flex-direction: column;
   justify-content: center;
   background-color: #f2f2f2;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 21px;
 }
+
+.page-footer--catalog .page-footer__wrapper {
+  padding-top: 33px;
+}
+
 .page-footer .page-footer__contacts {
   margin-bottom: 20px;
+
 }
+
 .page-footer--catalog .page-footer__contacts {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f2f2f2;
   margin-bottom: 0;
 }
+.page-footer__background-wrap {
+  background-color: #f2f2f2;
+}
+
+
 
 @media (min-width: $tablet-width) {
+
   .page-footer__wrapper {
+    padding-top: 53px;
     padding-right: 30px;
     padding-left: 30px;
-   flex-direction: row;
+    padding-bottom: 50px;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
+
   .page-footer__logo-link {
+    padding-top: 7px;
     min-width: 130px;
     margin: 0;
   }
+
+  .page-footer .page-footer__contacts {
+    padding-top: 63px;
+    padding-bottom: 58px;
+    margin-bottom: 0;
   }
-  @media (min-width: $desktop-width) {
-    .page-footer {
-      position: relative;
-    }
-    .page-footer__wrapper {
-      padding-left: 110px;
-      padding-right: 110px;
-    }
-    .page-footer .page-footer__contacts {
-      background-color: #ffffff;
-      width: 570px;
-      height: 201px;
-      position: absolute;
-      box-sizing: border-box;
-      top: 130px;
-      left: 110px;
-    }
+
+  .page-footer--catalog .page-footer__wrapper {
+    padding-top: 53px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__bg-wrap {
+    background-color: #f2f2f2;
+
+  }
+
+  .page-footer__wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 58px;
+  }
+
+  .page-footer .page-footer__contacts {
+    background-color: #ffffff;
+    min-width: 570px;
+    height: 201px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 95px;
+    left: 40px;
+  }
+
+  .page-footer__logo-link {
+    padding-top: 3px;
+  }
+  .page-footer--catalog .page-footer__wrapper {
+    padding-top: 59px;
+  }
+}

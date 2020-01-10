@@ -1,22 +1,33 @@
 .additional-goods {
   box-sizing: border-box;
   width: 320px;
+  margin: 0 auto;
 
 }
 
+.additional-goods__item-group {
+  margin-bottom: 37px;
+}
 .additional-goods__title {
   display: block;
   list-style: none;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   font-family: "Oswald", "Arial", "sans-serif";
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   text-align: left;
   color: #111111;
+  min-height: 37px;
 }
 
+.additional-goods__title-wrap {
+  width: 250px;
+  background-color:#ffffff;
+  padding-left: 20px;
+
+}
 .additional-goods__header {
   display: block;
   list-style: none;
@@ -28,6 +39,7 @@
   font-weight: normal;
   text-align: left;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-goods__description {
@@ -47,19 +59,32 @@
 .additional-goods__item {
   padding-top: 14px;
   padding-bottom: 17px;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
   ;
 }
 
+.additional-goods__button:hover {
+  background-color: #5eaa2f;
+}
+.additional-goods__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
 @media (min-width: $tablet-width) {
   .additional-goods {
-    width: 708px;
-  }
+    width: 768px;
+    box-sizing: border-box;
 
+  }
+  .additional-goods__item-group {
+    margin-bottom: 69px;
+  }
   .additional-goods__item {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding-top: 25px;
+    padding-bottom: 26px;
     padding-left: 38px;
     padding-right: 38px;
     width: 708px;
@@ -76,22 +101,25 @@
     line-height: 36px;
     padding-left: 38px;
     padding-right: 38px;
+    margin-bottom: 78px;
   }
   .additional-goods__title-wrap {
-    width: 425px;
+    width: 422px;
+    padding-left: 0;
+    margin-left: 29px;
     background-color:#ffffff;
   }
 
-  .additional-goods__title::after {
-    z-index: -1;
-    content:"";
-    background-color:#68b738;
-    min-width: 400%;
-    height: 3px;
-    position: absolute;
-    top: 21px;
-    left: -30px;
-  }
+  // .additional-goods__title::after {
+  //   z-index: -1;
+  //   content:"";
+  //   background-color:#68b738;
+  //   min-width: 400%;
+  //   height: 3px;
+  //   position: absolute;
+  //   top: 21px;
+  //   left: -30px;
+  // }
 
   .additional-goods__header {
     min-width: 160px;
@@ -99,12 +127,14 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .additional-goods__description {
     margin-left: auto;
     justify-content: flex-end;
+    font-size: 16px;
+    line-height: 20px;
 
   }
 
@@ -113,49 +143,72 @@
   }
 
   .additional-goods__pac {
-    margin-right: 53px;
+    margin-right: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
 
   .additional-goods {
-    width: 1440px;
+    width: 1300px;
     // position: relative;
 
   }
   .additional-goods__wrapper {
     display: flex;
     min-height: 289px;
-    align-items: center;
+    padding-bottom: 18px;
+
   }
 
   .additional-goods__item {
     padding: 0;
     flex-wrap: nowrap;
     width: 895px;
+    height: 72px;
+    border-left: none;
+    border-right: none;
+
   }
   .additional-goods__button {
     width: 245px;
   }
   .additional-goods__description {
-    margin-right: 35px;
+    margin-right: 43px;
+    justify-content: space-between;
   }
   .additional-goods__item-group {
     min-height: 289px;
     margin-right: 80px;
+    width: 895px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .additional-goods__title {
-    margin-bottom: 75px;
+    margin-bottom: 78px;
   }
-}
+
 .additional-goods__title-wrap {
-  width: 425px;
+  width: 414px;
+  margin-left: 0;
   background-color:#ffffff;
 }
 
-.additional-goods__title::after {
-  width: 400%;
-  top: 21px;
-  left: -110px;
+// .additional-goods__title::after {
+//   width: 400%;
+//   top: 21px;
+//   left: -110px;
+// }
+
+.additional-goods__header {
+  margin-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.additional-goods__pac {
+  margin-right: 102px;
+  text-align: center;
+  padding: 0;
+}
+
 }

@@ -1,5 +1,6 @@
 .comment-form {
   width: 320px;
+  margin: 0 auto;
   display: flex;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -15,7 +16,8 @@
 
 .comment-form__header {
   margin: 0;
-  margin-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 34px;
   list-style: none;
   font-family: "Oswald", "Arial", "sans-serif";
   font-size: 24px;
@@ -23,18 +25,33 @@
   line-height: 24px;
   text-align: left;
   color: #111111;
+  text-transform: none;
 }
 
+.comment-form__header-wrap {
+  background-color: #ffffff;
+  width: 162px;
+}
 .comment-form__text {
+  display: block;
+
   margin: 0;
+  margin-left: 20px;
+  outline: none;
   list-style: none;
-  padding: 10px 10px;
+  padding: 12px 13px;
   box-sizing: border-box;
   width: 280px;
   min-height: 150px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 }
-
+.comment-form__text:hover,
+.comment-form__text:focus {
+  border: 1px solid rgb(205, 205, 205);
+}
+.comment-form__text:active {
+  border: 2px solid #444444;
+}
 .comment-form ::placeholder {
   font-family: "Oswald", "Arial", "sans-serif";
   font-size: 16px;
@@ -50,18 +67,37 @@
     display: flex;
     flex-direction: column;
     min-width: 768px;
-    padding-left: 70px;
-    padding-right: 60px;
     text-transform: none;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
   }
   .comment-form__header {
+    position: relative;
     font-size: 36px;
     line-height: 36px;
+    padding: 0 39px;
+    margin-bottom: 76px;
   }
-
+  .comment-form__header-wrap {
+    background-color: #ffffff;
+    width: 258px;
+    margin-left: 30px;
+  }
+  // .comment-form__header::after {
+  //   z-index: -1;
+  //   content:"";
+  //   background-color:#68b738;
+  //   width: 1660px;
+  //   height: 3px;
+  //   position: absolute;
+  //   top: 21px;
+  //   left: -30px;
+  // }
   .comment-form__text {
+    margin-left: 0;
     width: 631px;
+    margin: 0 auto;
+    min-height: 174px;
+    padding: 9px 20px;
   }
   .comment-form ::placeholder {
     font-size: 20px;
@@ -70,12 +106,15 @@
 }
 @media (min-width: $desktop-width) {
 .comment-form {
-  min-width: 1440px;
-  padding-left: 110px;
-  padding-right: 110px;
+  min-width: 1300px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .comment-form__text {
-  width: 100%;
+  width: 1220px;
   min-height: 174px;
+}
+.comment-form__header-wrap {
+  margin-left: 0;
 }
 }

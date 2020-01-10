@@ -1,12 +1,19 @@
 .intro {
-  width: 100%;
+  width: 320px;
   padding-top: 29px;
   min-height: 500px;
+  box-sizing: border-box;
   margin: 0 auto;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 21px 165px, 0 0;
+  background-position: 21px 165px, center 0;
   background-size: auto, auto;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px auto,  100% auto;
+  }
 }
 
 .intro__slogan {
@@ -23,17 +30,33 @@
 .intro__button {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 335px;
+  margin-top: 300px;
   margin-bottom: 20px;
   display: block;
+}
+.intro__button:hover {
+  background-color: #5eaa2f;
+}
+.intro__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 800px;
+    width: 768px;
+    min-height: 854px;
+    padding-top: 45px;
+    padding-left: 27px;
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: 0 300px;
+    background-position: 29px 245px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 
   .intro__slogan {
@@ -43,9 +66,10 @@
     color: #111111;
     text-align: left;
   }
+
   .intro .intro__button {
     margin-left: 90px;
-    margin-top: 125px;
+    margin-top: 47px;
     font-size: 20px;
     line-height: 20px;
     padding-left: 25px;
@@ -55,15 +79,29 @@
     width: 245px;
     height: 52px;
   }
+
 }
+
 @media (min-width: $desktop-width) {
   .intro {
-    width: 1440px;
+    width: 1300px;
+    padding-left: 30px;
+    padding-right: 40px;
     margin: 0 auto;
-    padding-top: 27px;
+    padding-top: 93px;
     background-image: url("../img/index-can-desktop@1x.png");
-    min-height: 499px;
-    background-position: 50% 35px ;
+    min-height: 566px;
+    background-position: 65.6% 12px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
+    }
+
+    .intro__button {
+      margin-top: 53px;
+    }
   }
 
 }

@@ -1,0 +1,161 @@
+.toggle {
+  padding-top: 25px;
+  padding-left: 63px;
+  display: flex;
+}
+
+
+
+.toggle__controls {
+  position: relative;
+  margin-right: 17px;
+  margin-left: 19px;
+}
+
+
+
+.toggle__text {
+  font-size: 16px;
+  list-style-type: none;
+  font-family: "Oswald", "Arial", "sans-serif";
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(17, 17, 17, 0.4);
+}
+
+.toggle a:hover {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+}
+
+.toggle a:active {
+  border: none;
+}
+
+.toggle__scale {
+  box-sizing: border-box;
+  width: 84px;
+  height: 13px;
+  margin-top: 4px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+
+.toggle__button {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  background-color: #68b738;
+  border-radius: 6px;
+  width: 35px;
+  height: 6px;
+
+}
+
+
+.toggle__button:hover {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.toggle__button:active {
+  border-color: #68b738;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .toggle {
+    padding-top: 13px;
+    padding-left: 52px;
+    min-width: 570px;
+    display: flex;
+  }
+
+
+
+  .toggle__controls {
+    position: relative;
+    margin-right: 21px;
+    margin-left: 23px;
+  }
+
+
+
+  .toggle__text {
+    font-size: 20px;
+    list-style-type: none;
+    font-family: "Oswald", "Arial", "sans-serif";
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(17, 17, 17, 0.4);
+  }
+
+  .toggle a:hover {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+  }
+
+  .toggle a:active {
+    border: none;
+  }
+
+  .toggle__scale {
+    width: 428px;
+    height: 6px;
+    margin-top: 8px;
+
+    background: #dcdcdc;
+  }
+
+
+  .toggle__button {
+    position: absolute;
+    top: -7px;
+    left: 198px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .toggle__button::after {
+    content: "";
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .toggle__button:hover {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .toggle__button:active {
+    border-color: #68b738;
+  }
+
+  .toggle__controls {
+    margin-right: 21px;
+    margin-left: 23px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .toggle {
+    padding-top: 34px;
+    padding-left: 77px;
+  }
+}
