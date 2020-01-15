@@ -1,19 +1,21 @@
 .main-nav {
   // display: none;
   position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   color: #111111;
   text-transform: uppercase;
+
   background-color: #ffffff;
 }
 
 .main-nav a {
-  color: #111111;
   list-style: none;
+  color: #111111;
   text-decoration: none;
 }
 
@@ -21,15 +23,17 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .main-nav__item {
   box-sizing: border-box;
-  padding-left: 65px;
-  padding-right: 65px;
   padding-top: 22px;
+  padding-right: 65px;
   padding-bottom: 20px;
+  padding-left: 65px;
+
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -44,30 +48,33 @@
 
 .main-nav__button {
   position: absolute;
-  margin: 0;
-  padding: 0;
   top: -35px;
   right: 20px;
+
   display: block;
   width: 25px;
   height: 19px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
-  border: none;
+
   background-color: transparent;
   background-image: url("../img/icon-mobile-menu.svg");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-left: 44px;
+
+    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    font-weight: normal;
-    padding-left: 44px;
-    padding-top: 7px;
-    box-sizing: border-box;
-
   }
 
   .main-nav__list {
@@ -77,10 +84,11 @@
   }
 
   .main-nav__item {
-    padding-left: 0;
     padding-right: 0;
-    border-bottom: none;
     padding-bottom: 8px;
+    padding-left: 0;
+
+    border-bottom: none;
   }
 
   .main-nav__button {
@@ -90,6 +98,7 @@
   .main-nav .main-nav__item--active-inner {
     border-bottom: 2px solid #68b738;
   }
+
   .main-nav .main-nav__item--active {
     border-bottom: 2px solid #68b738;
   }
@@ -98,17 +107,20 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     margin-left: auto;
+
     font-size: 20px;
     line-height: 25px;
-    background-color: transparent;
 
+    background-color: transparent;
   }
+
   .main-nav__list {
     min-width: 479px;
   }
 
   .main-nav__item {
     padding-top: 0;
+
     border-bottom: none;
   }
 
@@ -119,6 +131,4 @@
   .main-nav--index .main-nav__item--active {
     border-bottom: 2px solid #ffffff;
   }
-
-
 }

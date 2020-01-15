@@ -1,15 +1,16 @@
 .page-footer {
   display: flex;
-  padding-bottom: 30px;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .page-footer__logo-link {
   display: block;
   margin: 0 auto;
-  text-decoration: none;
-  list-style: none;
   margin-bottom: 44px;
+
+  list-style: none;
+  text-decoration: none;
 }
 
 .page-footer__logo-link:hover {
@@ -21,14 +22,15 @@
 }
 
 .page-footer__wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f2f2f2;
   padding-top: 45px;
+  padding-right: 20px;
   padding-bottom: 21px;
+  padding-left: 20px;
+
+  background-color: #f2f2f2;
 }
 
 .page-footer--catalog .page-footer__wrapper {
@@ -37,15 +39,16 @@
 
 .page-footer .page-footer__contacts {
   margin-bottom: 20px;
-
 }
 
 .page-footer--catalog .page-footer__contacts {
+  margin-bottom: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+
   background-color: #f2f2f2;
-  margin-bottom: 0;
 }
+
 .page-footer__background-wrap {
   background-color: #f2f2f2;
 }
@@ -53,28 +56,27 @@
 
 
 @media (min-width: $tablet-width) {
-
   .page-footer__wrapper {
-    padding-top: 53px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 53px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
   }
 
   .page-footer__logo-link {
-    padding-top: 7px;
     min-width: 130px;
     margin: 0;
+    padding-top: 7px;
   }
 
   .page-footer .page-footer__contacts {
+    margin-bottom: 0;
     padding-top: 63px;
     padding-bottom: 58px;
-    margin-bottom: 0;
   }
 
   .page-footer--catalog .page-footer__wrapper {
@@ -89,31 +91,33 @@
 
   .page-footer__bg-wrap {
     background-color: #f2f2f2;
-
   }
 
   .page-footer__wrapper {
+    box-sizing: border-box;
     width: 1300px;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 58px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .page-footer .page-footer__contacts {
-    background-color: #ffffff;
-    min-width: 570px;
-    height: 201px;
     position: absolute;
-    box-sizing: border-box;
     top: 95px;
     left: 40px;
+
+    box-sizing: border-box;
+    min-width: 570px;
+    height: 201px;
+
+    background-color: #ffffff;
   }
 
   .page-footer__logo-link {
     padding-top: 3px;
   }
+
   .page-footer--catalog .page-footer__wrapper {
     padding-top: 59px;
   }

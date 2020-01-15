@@ -1,81 +1,107 @@
 .special-offer {
   position: relative;
+
   box-sizing: border-box;
-  padding-top: 187px;
-  padding-left: 60px;
-  padding-right: 60px;
   width: 280px;
   min-height: 289px;
-  background-color: #68b738;
-  color: #ffffff;
-  font-family: "Arial", "sans-serif";
+  margin-bottom: 35px;
+  padding-top: 187px;
+  padding-right: 60px;
+  padding-left: 60px;
+
   font-size: 16px;
   line-height: 20px;
+  font-family: "Arial", "sans-serif";
   text-align: center;
+  color: #ffffff;
+
+  background-color: #68b738;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  margin-bottom: 35px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
+
 
 .special-offer::before {
   content: "";
   position: absolute;
   top: 66px;
   left: 113px;
+
   width: 56px;
   height: 61px;
+
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
 }
 
 .special-offer p {
-  margin: 0;
   width: 161px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .special-offer {
     box-sizing: border-box;
+    width: 708px;
+    min-height: 200px;
+    margin-bottom: 77px;
     padding: 0;
     padding-top: 72px;
     padding-right: 123px;
-    min-height: 200px;
-    width: 708px;
+
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    margin-bottom: 77px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   .special-offer p {
-
-    margin-left: auto;
     width: 161px;
+    margin-left: auto;
+
     text-align: left;
   }
+
   .special-offer::before {
     left: 91px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .special-offer {
-    // position: absolute;
     box-sizing: border-box;
     width: 245px;
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
     height: 289px;
-    padding-top: 190px;
-    padding-left: 43px;
-    padding-right: 43px;
     margin-bottom: 0;
+    padding-top: 190px;
+    padding-right: 43px;
+    padding-left: 43px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
+
 
   .special-offer p {
     text-align: center;
-
   }
+
   .special-offer::before {
     left: 38%;
   }

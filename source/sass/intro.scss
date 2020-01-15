@@ -12,7 +12,7 @@
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
-    background-size: 280px auto,  100% auto;
+    background-size: 280px auto, 100% auto;
   }
 }
 
@@ -34,9 +34,11 @@
   margin-bottom: 20px;
   display: block;
 }
+
 .intro__button:hover {
   background-color: #5eaa2f;
 }
+
 .intro__button:active {
   background-color: #5eaa2f;
   color: rgba(255, 255, 255, 0.3);
@@ -57,6 +59,7 @@
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
     }
+
   }
 
   .intro__slogan {

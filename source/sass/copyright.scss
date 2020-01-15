@@ -1,13 +1,14 @@
 .copyright__link {
   display: block;
-  text-decoration: none;
+
   list-style: none;
-  font-family: "Arial", "sans-serif";
+  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
+  font-family: "Arial", "sans-serif";
   text-align: left;
   color: #444444;
-  font-weight: normal;
+  text-decoration: none;
 }
 
 
@@ -17,19 +18,22 @@
   justify-content: space-between;
   align-items: center;
 }
-.copyright:hover  path{
+
+.copyright:hover svg {
   fill: #68b738;
 }
+
 .copyright:active {
   opacity: 30%;
 }
+
 @media (min-width: $tablet-width) {
   .copyright {
-    min-width: 163px;
     align-items: flex-start;
+    min-width: 163px;
   }
+
   .copyright__link {
     padding-top: 5px;
   }
-
 }
