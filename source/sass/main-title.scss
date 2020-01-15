@@ -1,24 +1,26 @@
 .main-title {
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
+  padding: 0;
+
   list-style: none;
-  font-family: "Oswald","Arial","sans-serif";
-  font-size: 36px;
   font-weight: normal;
+  font-size: 36px;
   line-height: 36px;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: center;
   color: white;
 }
 
 @media (min-width: $tablet-width) {
   .main-title {
-    padding-left: 90px;
-    margin-bottom: 41px;
     width: 425px;
+    margin-bottom: 41px;
+    padding-left: 90px;
+
     font-size: 60px;
     line-height: 60px;
-    color: #111111;
     text-align: left;
+    color: #111111;
   }
 }

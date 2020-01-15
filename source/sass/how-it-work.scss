@@ -1,6 +1,6 @@
 .how-it-work {
-  width: 320px;
   box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
   margin-bottom: 47px;
 }
@@ -9,29 +9,33 @@
   display: block;
   margin: 0;
   margin-bottom: 35px;
+
   list-style: none;
   font-weight: normal;
-  font-family: "Oswald", "Arial", "sans-serif";
   font-size: 36px;
   line-height: 52px;
-  color: #111111;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
+  color: #111111;
 }
 
 .how-it-work__item {
-  box-sizing: border-box;
   position: relative;
-  padding-left: 80px;
+
+  box-sizing: border-box;
   margin-bottom: 27px;
+  padding-left: 80px;
 }
 
 .how-it-work__item::before {
   content: "";
+  position: absolute;
   top: -3px;
   left: 0;
-  position: absolute;
+
   width: 60px;
   height: 60px;
+
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,35 +43,60 @@
 
 .how-it-work__item--leaf::before {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 60px auto;
+  }
 }
 
 .how-it-work__item--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 60px auto;
+  }
 }
 
 .how-it-work__item--food::before {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 60px auto;
+  }
 }
 
 .how-it-work__item--time::before {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 60px auto;
+  }
 }
 
 .how-it-work__text {
   margin: 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .how-it-work {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    margin-bottom: 8px;
     box-sizing: border-box;
+    width: 768px;
+    margin-bottom: 8px;
+
     color: #444444;
   }
 
@@ -82,13 +111,13 @@
   }
 
   .how-it-work__item {
-    min-width: 200px;
-    padding-top: 123px;
-    min-height: 230px;
     width: 222px;
-    padding-left: 0;
+    min-width: 200px;
+    min-height: 230px;
     margin-right: 25px;
     margin-bottom: 87px;
+    padding-top: 123px;
+    padding-left: 0;
   }
 
   .how-it-work__item--leaf {
@@ -105,23 +134,26 @@
 
   .how-it-work__header {
     width: 100%;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .how-it-work__item::before {
+    top: 11px;
+
     width: 80px;
     height: 80px;
-    top: 11px;
   }
 
   .how-it-work__item::after {
-    z-index: -1;
     position: absolute;
     top: -29px;
+    z-index: -1;
+
     font-size: 281px;
-    font-family: "Oswald", "Arial", "sans-serif";
     line-height: 281px;
+    font-family: "Oswald", "Arial", "sans-serif";
     color: #f2f2f2;
     font-stretch: ultra-condensed;
   }
@@ -149,10 +181,8 @@
 
 @media (min-width: $desktop-width) {
   .how-it-work {
-
     width: 1300px;
     margin-bottom: 0;
-
   }
 
   .how-it-work__item {
@@ -170,5 +200,4 @@
   .how-it-work__item--food {
     margin-right: 103px;
   }
-
 }

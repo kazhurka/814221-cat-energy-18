@@ -1,40 +1,43 @@
 .additional-goods-form {
-  width: 320px;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
   margin-bottom: 30px;
-  box-sizing: border-box;
-  flex-direction: column;
-  font-family: "Oswald", "Arial", "sans-serif";
-  font-size: 16px;
+
   font-weight: normal;
+  font-size: 16px;
   line-height: 18px;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
   color: #222222;
   text-transform: uppercase;
 }
 
 .additional-goods-form__header {
-  margin: 0;
   width: 170px;
-  padding-left: 20px;
+  margin: 0;
   margin-bottom: 38px;
+  padding-left: 20px;
+
   list-style: none;
-  font-family: "Oswald", "Arial", "sans-serif";
-  font-size: 24px;
   font-weight: normal;
+  font-size: 24px;
   line-height: 24px;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
   color: #111111;
-  background-color: #ffffff;
   text-transform: none;
 
+  background-color: #ffffff;
 }
 
 .additional-goods-form__header-wrap {
   width: 100%;
-  background-color: transparent;
   margin-right: 50px;
+
+  background-color: transparent;
 }
 
 .additional-goods-form__wrapper {
@@ -49,12 +52,14 @@
 }
 
 .additional-goods-form label::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: -5px;
   left: -46px;
+
   width: 28px;
   height: 28px;
+
   border: 1px solid #cdcdcd;
 }
 
@@ -74,25 +79,27 @@
 }
 
 .additional-goods-form__wrap {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .additional-goods-form p {
   margin: 0;
-  text-transform: none;
+
   font-size: 14px;
   line-height: 16px;
   font-family: Arial, sans-serif;
+  text-transform: none;
 }
 
 .additional-goods-form__button {
   margin-top: 16px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 20px;
 }
 
 .additional-goods-form__button:hover {
@@ -100,31 +107,33 @@
 }
 
 .additional-goods-form__button:active {
-  background-color: #5eaa2f;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5eaa2f;
 }
 
 @media (min-width: $tablet-width) {
   .additional-goods-form {
-    min-width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 768px;
+    margin-bottom: 52px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 52px;
   }
 
   .additional-goods-form__wrap {
     flex-direction: row;
     align-items: center;
-    padding-left: 71px;
     padding-right: 70px;
+    padding-left: 71px;
   }
 
   .additional-goods-form__wrapper--milk,
   .additional-goods-form__wrapper--sweetener {
-    margin-left: 78px;
     margin-right: 94px;
+    margin-left: 78px;
   }
 
   .additional-goods-form__header-wrap {
@@ -132,63 +141,55 @@
   }
 
   .additional-goods-form__header {
+    position: relative;
+
     width: 214px;
+    margin-bottom: 67px;
+    padding: 0 39px;
+
     font-size: 36px;
     line-height: 36px;
     text-transform: none;
-    margin-bottom: 67px;
-    position: relative;
+
     background-color: #ffffff;
-    padding: 0 39px;
   }
 
-  // .additional-goods-form__header::after {
-  //   z-index: -1;
-  //   content: "";
-  //   background-color: #68b738;
-  //   min-width: 1660px;
-  //   height: 3px;
-  //   position: absolute;
-  //   top: 21px;
-  //   left: -30px;
-  // }
-
-
-
   .additional-goods-form__wrapper {
-    padding-left: 50px;
     min-width: 200px;
     margin-bottom: 52px;
-
+    padding-left: 50px;
   }
 
   .additional-goods-form label::before {
     top: -9px;
     left: -59px;
+
     width: 38px;
     height: 38px;
   }
 
   .additional-goods-form__button {
+    width: 283px;
+    height: 52px;
+    margin-top: 13px;
+    margin-right: 62px;
+
     font-size: 20px;
     line-height: 20px;
-    height: 52px;
-    width: 283px;
-    margin-right: 62px;
-    margin-top: 13px;
   }
 
   .additional-goods-form p {
+    height: 28px;
+
     font-size: 16px;
     line-height: 16px;
-    height: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods-form {
-    min-width: 1300px;
     justify-content: space-between;
+    min-width: 1300px;
     margin-bottom: 62px;
   }
 
@@ -199,22 +200,24 @@
 
   .additional-goods-form__wrap {
     justify-content: flex-start;
-    padding-left: 40px;
     padding-right: 40px;
+    padding-left: 40px;
   }
 
   .additional-goods-form__header-wrap {
     margin-left: 0;
   }
+
   .additional-goods-form__wrapper {
     margin: 0;
     margin-bottom: 59px;
   }
+
   .additional-goods-form__wrapper--sweetener {
     margin-left: 47px;
   }
+
   .additional-goods-form__wrapper--vitamin {
     margin-right: 28px;
   }
-
 }

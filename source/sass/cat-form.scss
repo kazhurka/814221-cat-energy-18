@@ -1,24 +1,25 @@
 .cat-form {
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   margin-bottom: 30px;
-  flex-direction: column;
-  font-family: "Oswald", "Arial", "sans-serif";
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
-  font-weight: normal;
-  text-transform: uppercase;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .cat-form__input-group {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 320px;
   box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
+  padding-right: 20px;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .cat-form__input-group label {
@@ -26,113 +27,114 @@
 }
 
 .cat-form__text {
-
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
+  width: 320px;
   margin: 0;
   margin: 0 auto;
   margin-bottom: 35px;
   padding-top: 24px;
-  padding-left: 20px;
   padding-right: 50px;
-  width: 320px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  padding-left: 20px;
+
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Oswald", "Arial", "sans-serif";
   text-align: left;
-  font-weight: normal;
-  text-transform: uppercase;
   color: #111111;
+  text-transform: uppercase;
 }
 
 .cat-form__name {
+  display: block;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   min-width: 225px;
   height: 45px;
+  margin: 0;
   margin-bottom: 10px;
   margin-left: 15px;
-  list-style: none;
-  display: block;
+  padding: 0;
 
+  list-style: none;
 }
 
 .cat-form__wrapper {
-  padding-top: 5px;
   display: flex;
-
-
+  padding-top: 5px;
 }
 
 .cat-form__radiobutton-group {
   padding-top: 22px;
+  padding-bottom: 7px;
+
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 7px;
 }
 
 .cat-form__radiobutton-group .cat-form__wrapper {
+  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  box-sizing: border-box;
-  padding-left: 65px;
-  padding-right: 20px;
   margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 65px;
 }
 
 .cat-form__radiobutton-group label {
   position: relative;
-
 }
 
 .cat-form__radiobutton-group label::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: -6px;
   left: -45px;
+
   width: 28px;
   height: 28px;
+
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
 
 .cat-form__radiobutton-group label::after {
-  position: absolute;
-  display: none;
   content: "";
+  position: absolute;
   top: 2px;
   left: -37px;
+
+  display: none;
   width: 12px;
   height: 12px;
-  border: 1px solid #cdcdcd;
+
   background-color: #68b738;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
 
 .cat-form__weight {
+  display: block;
+  box-sizing: border-box;
+  width: 204px;
+  height: 45px;
   margin: 0;
   margin-bottom: 10px;
   margin-left: 20px;
-  height: 45px;
-  width: 204px;
-  list-style: none;
-  display: block;
-  box-sizing: border-box;
 
+  list-style: none;
 }
 
 .cat-form__age {
+  display: block;
   box-sizing: border-box;
+  width: 172px;
+  height: 45px;
   margin: 0;
   margin-bottom: 10px;
   margin-left: 18px;
-  height: 45px;
-  width: 172px;
+
   list-style: none;
-  display: block;
-
-
 }
 
 .cat-form__radiobutton:checked+label::after {
@@ -142,8 +144,8 @@
 
 
 .cat-form input {
-  outline: none;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: none;
 }
 
 .cat-form input:hover,
@@ -168,36 +170,43 @@
 
 @media (min-width: $tablet-width) {
   .cat-form {
+    width: 768px;
     margin: 0 auto;
     margin-bottom: 75px;
-    width: 768px;
+
     font-size: 20px;
     line-height: 20px;
     color: #222222;
   }
+
   .cat-form__radiobutton-group label::before {
-    width: 40px;
-    height: 40px;
     top: -10px;
     left: -60px;
+
+    width: 40px;
+    height: 40px;
   }
+
   .cat-form__radiobutton-group label::after {
+    top: 1px;
+    left: -50px;
+
     width: 18px;
     height: 18px;
-    left: -50px;
-    top: 1px;
   }
+
   .cat-form__text {
-    padding: 0;
-    margin: 0;
     width: 393px;
+    max-width: auto;
+    margin: 0;
+    margin-top: 54px;
+    margin-bottom: 64px;
+    padding: 0;
     padding-left: 70px;
+
     font-size: 20px;
     line-height: 30px;
     text-align: left;
-    margin-top: 54px;
-    margin-bottom: 64px;
-    max-width: auto;
   }
 
   .cat-form__name {
@@ -209,8 +218,8 @@
   .cat-form__weight {
     min-width: 536px;
     height: 51px;
-    margin-left: 25px;
     margin-bottom: 16px;
+    margin-left: 25px;
   }
 
   .cat-form__age {
@@ -226,15 +235,16 @@
   }
 
   .cat-form__wrapper {
-    padding-left: 40px;
     padding-right: 37px;
+    padding-left: 40px;
   }
 
   .cat-form__radiobutton-group {
     width: 630px;
     min-height: 159px;
-    padding-top: 28px;
     margin: 0 auto;
+    padding-top: 28px;
+
     border: 1px solid #cdcdcd;
   }
 
@@ -247,45 +257,43 @@
 
 @media (min-width: $desktop-width) {
   .cat-form {
-
-    min-width: 1300px;
     flex-direction: row;
-    padding-top: 0;
     flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
+    min-width: 1300px;
     margin-bottom: 40px;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .cat-form__wrapper {
     padding: 0;
-
   }
 
   .cat-form__input-group {
     margin: 0;
+    margin-right: 77px;
     margin-bottom: 20px;
     padding: 0;
-    margin-right: 77px;
   }
 
   .cat-form__radiobutton-group {
-    padding-top: 32px;
     width: 570px;
-    margin: 0;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
     height: 100%;
-
+    margin: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 0;
   }
 
   .cat-form__text {
     width: 100%;
     height: 50px;
-    text-align: left;
-    padding-right: 840px;
     margin-bottom: 78px;
+    padding-right: 840px;
     padding-left: 0;
+
+    text-align: left;
   }
 
   .cat-form__name {
@@ -303,9 +311,9 @@
     min-width: 436px;
     margin-left: 18px;
   }
-  .cat-form__radiobutton-group .cat-form__wrapper {
-    margin-bottom: 33px;
-    width: 570px;
-  }
 
+  .cat-form__radiobutton-group .cat-form__wrapper {
+    width: 570px;
+    margin-bottom: 33px;
+  }
 }
