@@ -2,7 +2,6 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 12px;
-  padding-bottom: 7px;
 }
 
 .main-header a {
@@ -11,7 +10,9 @@
 }
 
 .main-header__logo-link {
+  display: block;
   padding-left: 20px;
+  padding-bottom: 7px;
 }
 
 .main-header__logo-link:hover {

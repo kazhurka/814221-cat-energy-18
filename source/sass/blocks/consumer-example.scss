@@ -16,7 +16,6 @@
   display: block;
   box-sizing: border-box;
   width: 320px;
-  margin: 0;
   margin: 0 auto;
   margin-bottom: 24px;
 
@@ -24,13 +23,12 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #111111;
 }
 
 .consumer-example__description {
-  margin: 0;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
@@ -76,7 +74,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial", "sans-serif";
+  font-family: "Arial", sans-serif;
   text-align: center;
   color: #444444;
 }
@@ -100,7 +98,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   color: #111111;
   text-transform: uppercase;
@@ -109,14 +107,13 @@
 .consumer-example__cost {
   display: block;
   min-width: 180px;
-  margin: 0;
   margin: 0 auto;
   padding: 0;
 
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #111111;
   text-transform: uppercase;
@@ -169,6 +166,10 @@
   .consumer-example__description {
     padding-right: 38px;
     padding-left: 29px;
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .consumer-example__text {
@@ -212,13 +213,6 @@
     line-height: 37px;
   }
 
-  .consumer-example__description {
-    margin-bottom: 60px;
-
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .consumer-example__desc {
     width: 128px;
 
@@ -236,6 +230,7 @@
   }
 
   .consumer-example__result {
+    width: 430px;
     justify-content: flex-start;
     margin: 0;
     padding-left: 40px;
@@ -248,7 +243,7 @@
     margin: 0 auto;
     padding-top: 5px;
 
-    background-image: linear-gradient(transparent, transparent 23%, #eaeaea 23% #eaeaea 77%, );
+    background: linear-gradient(transparent, transparent 23%, #eaeaea 23% #eaeaea 77%,);
   }
 
   .consumer-example__description {
@@ -256,10 +251,6 @@
     margin: 0;
     margin-bottom: 75px;
     padding-left: 40px;
-  }
-
-  .consumer-example__result {
-    width: 430px;
   }
 
   .consumer-example__cost {

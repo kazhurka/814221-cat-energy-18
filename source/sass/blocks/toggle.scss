@@ -4,8 +4,6 @@
   padding-left: 63px;
 }
 
-
-
 .toggle__controls {
   position: relative;
 
@@ -13,14 +11,12 @@
   margin-left: 19px;
 }
 
-
-
 .toggle__text {
   list-style-type: none;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #111111;
   text-transform: uppercase;
@@ -47,7 +43,6 @@
   border: 1px solid #cdcdcd;
   border-radius: 6px;
 }
-
 
 .toggle__button {
   position: absolute;
@@ -79,8 +74,6 @@
     padding-left: 52px;
   }
 
-
-
   .toggle__controls {
     position: relative;
 
@@ -88,14 +81,12 @@
     margin-left: 23px;
   }
 
-
-
   .toggle__text {
     list-style-type: none;
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    font-family: "Oswald", "Arial", "sans-serif";
+    font-family: "Oswald", "Arial", sans-serif;
     text-align: left;
     color: #111111;
     text-transform: uppercase;
@@ -154,11 +145,6 @@
 
   .toggle__button:active {
     border-color: #68b738;
-  }
-
-  .toggle__controls {
-    margin-right: 21px;
-    margin-left: 23px;
   }
 }
 
