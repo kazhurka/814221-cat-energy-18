@@ -10,7 +10,7 @@
   background-size: auto, auto;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
     background-size: 280px auto, 100% auto;
   }
@@ -18,7 +18,7 @@
 
 .intro__slogan {
   display: block;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
@@ -48,18 +48,18 @@
   .intro {
     width: 768px;
     min-height: 854px;
-    padding-top: 45px;
+    margin-bottom: 6px;
+    padding-top: 52px;
     padding-left: 27px;
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: 29px 245px;
+    background-position: 29px 252px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
     }
-
   }
 
   .intro__slogan {
@@ -82,7 +82,6 @@
     width: 245px;
     height: 52px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -91,13 +90,13 @@
     padding-left: 30px;
     padding-right: 40px;
     margin: 0 auto;
-    padding-top: 93px;
+    padding-top: 99px;
     background-image: url("../img/index-can-desktop@1x.png");
     min-height: 566px;
     background-position: 65.6% 12px;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
       background-size: 552px auto;
     }
@@ -106,5 +105,4 @@
       margin-top: 53px;
     }
   }
-
 }

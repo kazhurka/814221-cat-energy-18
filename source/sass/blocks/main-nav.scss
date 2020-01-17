@@ -1,5 +1,4 @@
 .main-nav {
-  // display: none;
   position: relative;
 
   font-weight: 500;
@@ -45,14 +44,13 @@
   opacity: 30%;
 }
 
-
-.main-nav__button {
+.main-nav .main-nav__button {
   position: absolute;
-  top: -35px;
+  top: -43px;
   right: 20px;
 
   display: block;
-  width: 25px;
+  width: 19px;
   height: 19px;
   margin: 0;
   padding: 0;
@@ -60,11 +58,34 @@
   list-style: none;
 
   background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
 }
+
+.main-nav--closed .main-nav__button {
+  width: 25px;
+
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__button {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+.main-nav--opened .main-nav__item {
+  display: block;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -83,7 +104,12 @@
     min-width: 439px;
   }
 
+  .main-nav--closed .main-nav__item {
+    display: block;
+  }
+
   .main-nav__item {
+    display: block;
     padding-right: 0;
     padding-bottom: 8px;
     padding-left: 0;
@@ -91,7 +117,7 @@
     border-bottom: none;
   }
 
-  .main-nav__button {
+  .main-nav .main-nav__button {
     display: none;
   }
 

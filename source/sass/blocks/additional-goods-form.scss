@@ -9,7 +9,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #222222;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", "sans-serif";
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #111111;
   text-transform: none;
@@ -63,15 +63,15 @@
   border: 1px solid #cdcdcd;
 }
 
-.additional-goods-form__checkbox:hover+label::before {
+.additional-goods-form__checkbox:hover + label::before {
   border: 1px solid #bababa;
 }
 
-.additional-goods-form__checkbox:active+label::before {
+.additional-goods-form__checkbox:active + label::before {
   opacity: 30%;
 }
 
-.additional-goods-form__checkbox:checked+label:before {
+.additional-goods-form__checkbox:checked + label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -90,7 +90,7 @@
 
   font-size: 14px;
   line-height: 16px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: none;
 }
 
