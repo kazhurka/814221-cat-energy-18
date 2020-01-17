@@ -48,10 +48,11 @@
   .intro {
     width: 768px;
     min-height: 854px;
-    padding-top: 45px;
+    margin-bottom: 6px;
+    padding-top: 52px;
     padding-left: 27px;
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: 29px 245px;
+    background-position: 29px 252px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi),
@@ -89,7 +90,7 @@
     padding-left: 30px;
     padding-right: 40px;
     margin: 0 auto;
-    padding-top: 93px;
+    padding-top: 99px;
     background-image: url("../img/index-can-desktop@1x.png");
     min-height: 566px;
     background-position: 65.6% 12px;
