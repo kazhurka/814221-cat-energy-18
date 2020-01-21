@@ -1,11 +1,11 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
 }
 
 .page-footer__logo-link {
   display: block;
+  align-self: center;
   margin: 0 auto;
   margin-bottom: 44px;
 
@@ -22,6 +22,8 @@
 }
 
 .page-footer__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,12 +34,44 @@
   padding-right: 20px;
   padding-bottom: 21px;
   padding-left: 20px;
+}
 
-  background-color: #f2f2f2;
+.page-footer__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 163px;
+  left: 20px;
+
+  width: 280px;
+  height: 1px;
+
+  background-color: #444444;
+  opacity: 0.1;
+}
+
+.page-footer__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 20px;
+
+  width: 280px;
+  height: 1px;
+
+  background-color: #444444;
+  opacity: 0.1;
 }
 
 .page-footer--catalog .page-footer__wrapper {
   padding-top: 33px;
+}
+
+.page-footer--catalog .page-footer__wrapper::before {
+  top: 153px;
+}
+
+.page-footer--catalog .page-footer__wrapper::after {
+  top: 89px;
 }
 
 .page-footer .page-footer__contacts {
@@ -71,6 +105,11 @@
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 30px;
+  }
+
+  .page-footer__wrapper::after,
+  .page-footer__wrapper::before {
+    display: none;
   }
 
   .page-footer__logo-link {

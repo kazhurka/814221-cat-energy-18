@@ -19,7 +19,7 @@
 }
 
 .main-nav__list {
-  min-width: 320px;
+  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -100,8 +100,9 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 439px;
+    width: 439px;
   }
 
   .main-nav--closed .main-nav__item {

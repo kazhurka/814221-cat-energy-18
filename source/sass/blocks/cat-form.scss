@@ -26,6 +26,15 @@
   padding-top: 12px;
 }
 
+.cat-form__input-group input {
+  padding-right: 16px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
 .cat-form__text {
   display: block;
   box-sizing: border-box;
@@ -122,6 +131,17 @@
   margin-left: 16px;
 
   list-style: none;
+
+  appearance: textfield;
+}
+
+.cat-form__age::-webkit-outer-spin-button,
+.cat-form__age::-webkit-inner-spin-button,
+.cat-form__weight::-webkit-inner-spin-button,
+.cat-form__weight::-webkit-outer-spin-button {
+  margin: 0;
+
+  appearance: none;
 }
 
 .cat-form__age {
@@ -134,6 +154,8 @@
   margin-left: 14px;
 
   list-style: none;
+
+  appearance: textfield;
 }
 
 .cat-form__radiobutton:checked + label::after {
@@ -145,16 +167,18 @@
   outline: none;
 }
 
-.cat-form input:hover,
-.cat-form input:focus {
+.cat-form input:hover {
   border: 1px solid rgb(205, 205, 205);
 }
 
-.cat-form input:active {
+.cat-form input:focus {
   border: 2px solid #444444;
 }
 
-.cat-form__radiobutton:hover + label::before,
+.cat-form__radiobutton:hover + label::before {
+  border: 1px solid #bababa;
+}
+
 .cat-form__radiobutton:focus + label::before {
   border: 1px solid #bababa;
 }
@@ -173,6 +197,14 @@
     font-size: 20px;
     line-height: 20px;
     color: #222222;
+  }
+
+  .cat-form__input-group input {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .cat-form__radiobutton-group label::before {
@@ -196,7 +228,7 @@
     max-width: auto;
     margin: 0;
     margin-top: 54px;
-    margin-bottom: 64px;
+    margin-bottom: 66px;
     padding: 0;
     padding-left: 70px;
 
@@ -215,7 +247,7 @@
     min-width: 536px;
     height: 51px;
     margin-bottom: 16px;
-    margin-left: 25px;
+    margin-left: 19px;
   }
 
   .cat-form__age {
@@ -227,6 +259,7 @@
   .cat-form__input-group {
     width: auto;
     margin-bottom: 53px;
+    padding-left: 24px;
   }
 
   .cat-form__wrapper {

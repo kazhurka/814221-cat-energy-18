@@ -12,6 +12,7 @@
 }
 
 .toggle__text {
+  height: 22px;
   list-style-type: none;
   font-weight: normal;
   font-size: 16px;
@@ -63,6 +64,7 @@
 
 .toggle__button:active {
   border-color: #68b738;
+  border-width: 2px;
 }
 
 
@@ -82,6 +84,7 @@
   }
 
   .toggle__text {
+    height: 24px;
     list-style-type: none;
     font-weight: normal;
     font-size: 20px;
@@ -152,5 +155,9 @@
   .toggle {
     padding-top: 34px;
     padding-left: 77px;
+  }
+
+  .toggle__text {
+    height: 26px;
   }
 }

@@ -1,0 +1,10 @@
+.wrap-background {
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 11px, #68b738 11px, #68b738 14px, #ffffff 14px);
+}
+
+@media (min-width: $tablet-width) {
+  .wrap-background {
+    background-image: linear-gradient(#ffffff 21px, #68b738 21px, #68b738 24px, #ffffff 24px);
+  }
+}

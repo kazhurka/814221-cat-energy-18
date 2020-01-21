@@ -19,8 +19,13 @@
   box-sizing: border-box;
   height: 45px;
   margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 
   list-style: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: #444444;
 
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
@@ -74,12 +79,11 @@
 }
 
 
-.owner-form input:hover,
-.owner-form input:focus {
+.owner-form input:hover {
   border: 1px solid rgb(205, 205, 205);
 }
 
-.owner-form input:active {
+.owner-form input:focus {
   border: 2px solid #444444;
 }
 
@@ -114,8 +118,6 @@
 
 @media (min-width: $tablet-width) {
   .owner-form {
-    // padding-left: 70px;
-    // padding-right: 60px;
     min-width: 768px;
     margin-bottom: 45px;
 
@@ -156,16 +158,6 @@
     background-color: transparent;
   }
 
-  // .owner-form__header::after {
-  //   z-index: -1;
-  //   content:"";
-  //   background-color:#68b738;
-  //   width: 1660px;
-  //   height: 3px;
-  //   position: absolute;
-  //   top: 20px;
-  //   left: -30px;
-  // }
   .owner-form .owner-form__phone {
     position: relative;
 
