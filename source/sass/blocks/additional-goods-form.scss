@@ -67,6 +67,10 @@
   border: 1px solid #bababa;
 }
 
+.additional-goods-form__checkbox:focus + label::before {
+  border: 1px solid #444444;
+}
+
 .additional-goods-form__checkbox:active + label::before {
   opacity: 30%;
 }
@@ -106,6 +110,10 @@
   background-color: #5eaa2f;
 }
 
+.additional-goods-form__button:focus {
+  background-color: #5eaa2f;
+}
+
 .additional-goods-form__button:active {
   color: rgba(255, 255, 255, 0.3);
 
@@ -114,13 +122,19 @@
 
 @media (min-width: $tablet-width) {
   .additional-goods-form {
-    flex-direction: row;
-    flex-wrap: wrap;
     min-width: 768px;
     margin-bottom: 52px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .additional-goods-form__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+    padding-left: 79px;
   }
 
   .additional-goods-form__wrap {
@@ -130,11 +144,6 @@
     padding-left: 71px;
   }
 
-  .additional-goods-form__wrapper--milk,
-  .additional-goods-form__wrapper--sweetener {
-    margin-right: 94px;
-    margin-left: 78px;
-  }
 
   .additional-goods-form__header-wrap {
     margin-left: 30px;
@@ -156,7 +165,8 @@
 
   .additional-goods-form__wrapper {
     min-width: 200px;
-    margin-bottom: 52px;
+    margin-right: 93px;
+    margin-bottom: 50px;
     padding-left: 50px;
   }
 
@@ -188,7 +198,6 @@
 
 @media (min-width: $desktop-width) {
   .additional-goods-form {
-    justify-content: space-between;
     min-width: 1300px;
     margin-bottom: 62px;
   }
@@ -196,6 +205,10 @@
   .additional-goods-form__button {
     width: 568px;
     margin-right: 82px;
+  }
+
+  .additional-goods-form__container {
+    padding-left: 50px;
   }
 
   .additional-goods-form__wrap {
@@ -209,15 +222,11 @@
   }
 
   .additional-goods-form__wrapper {
-    margin: 0;
-    margin-bottom: 59px;
+    margin-right: 74px;
+    margin-bottom: 57px;
   }
 
-  .additional-goods-form__wrapper--sweetener {
-    margin-left: 47px;
-  }
-
-  .additional-goods-form__wrapper--vitamin {
-    margin-right: 28px;
+  .additional-goods-form__wrapper:nth-of-type(4n) {
+    margin-right: 0;
   }
 }

@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.min.js"></script>
 </head>
@@ -56,7 +59,7 @@
     </symbol>
   </svg>
   <header class="main-header">
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__logo-link">
+    <a href="index.html" class="main-header__logo-link">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -117,7 +120,7 @@
           </div>
           <div class="owner-form__wrapper owner-form__wrapper--email">
             <label for="owner-email">E-mail:*</label>
-            <svg class="owner-form__svg" fill="#222222">
+            <svg class="owner-form__svg" fill="#222222" width="18" height="14">
               <use xlink:href="#email-icon"></use>
             </svg>
             <input class="owner-form__e-mail" type="email" id="owner-email" required>
@@ -125,7 +128,7 @@
           <div class="owner-form__wrapper owner-form__wrapper--phone">
             <label for="owner-phone">Телефон:*</label>
             <input class="owner-form__phone" type="tel" id="owner-phone" required>
-            <svg class="owner-form__svg" fill="#222222">
+            <svg class="owner-form__svg" fill="#222222" width="21" height="21">
               <use xlink:href="#phone-icon"></use>
             </svg>
           </div>
@@ -144,22 +147,23 @@
           <div class="additional-goods-form__header-wrap">
             <h2 class="additional-goods-form__header">Дополнительно</h2>
           </div>
-          <div class="additional-goods-form__wrapper additional-goods-form__wrapper--sweetener">
-            <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="sweetener">
-            <label for="sweetener">Сахарозаменитель</label>
-          </div>
-          <div class="additional-goods-form__wrapper additional-goods-form__wrapper--water">
-
-            <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="water">
-            <label for="water">Питьевая вода</label>
-          </div>
-          <div class="additional-goods-form__wrapper additional-goods-form__wrapper--milk">
-            <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="milk">
-            <label for="milk">Молоко</label>
-          </div>
-          <div class="additional-goods-form__wrapper additional-goods-form__wrapper--vitamin">
-            <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="vitamin">
-            <label for="vitamin">Витамины</label>
+          <div class="additional-goods-form__container">
+            <div class="additional-goods-form__wrapper additional-goods-form__wrapper--sweetener">
+              <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="sweetener">
+              <label for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="additional-goods-form__wrapper additional-goods-form__wrapper--water">
+              <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="water">
+              <label for="water">Питьевая вода</label>
+            </div>
+            <div class="additional-goods-form__wrapper additional-goods-form__wrapper--milk">
+              <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="milk">
+              <label for="milk">Молоко</label>
+            </div>
+            <div class="additional-goods-form__wrapper additional-goods-form__wrapper--vitamin">
+              <input class="additional-goods-form__checkbox visually-hidden" type="checkbox" id="vitamin">
+              <label for="vitamin">Витамины</label>
+            </div>
           </div>
           <div class="additional-goods-form__wrap">
             <button type="submit" class="button additional-goods-form__button">Отправить заявку</button>
@@ -200,7 +204,7 @@
     </div>
     <div class="page-footer__bg-wrap">
       <div class="page-footer__wrapper">
-        <a  href="index.html" class="page-footer__logo-link">
+        <a href="index.html" class="page-footer__logo-link">
           <img class="page-footer__logo-picture" src="img/logo-footer.svg" width="128" height="25"
             alt="Логотип Cat Energy">
         </a>
@@ -232,7 +236,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-          <svg width="26.943" height="34.09">
+          <svg width="27" height="34">
             <use xlink:href="#academy-link"></use>
           </svg>
         </div>

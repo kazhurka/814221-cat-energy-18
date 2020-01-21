@@ -118,6 +118,19 @@
   text-decoration: none;
 }
 
+.ration-programs__link::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  width: 240px;
+  height: 1px;
+
+  background-color: #444444;
+  opacity: 0.1;
+}
+
 .ration-programs__link::after {
   content: "";
   position: absolute;
@@ -135,7 +148,7 @@
 }
 
 .ration-programs__link:hover::after {
-  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 34px;
 }
 
 .ration-programs__link:active {
@@ -146,7 +159,7 @@
   .ration-programs {
     box-sizing: border-box;
     width: 768px;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .ration-programs__item {
@@ -223,6 +236,10 @@
   .ration-programs__link::after {
     top: 5px;
     left: 131px;
+  }
+
+  .ration-programs__link::before {
+    display: none;
   }
 
   .ration-programs__item--pro .ration-programs__link::after {

@@ -183,18 +183,10 @@
   }
 
   .how-it-work__item {
+    margin-right: 103px;
+  }
+
+  .how-it-work__item:nth-of-type(4n) {
     margin-right: 0;
-  }
-
-  .how-it-work__item--leaf {
-    margin-right: 103px;
-  }
-
-  .how-it-work__item--powder {
-    margin-right: 103px;
-  }
-
-  .how-it-work__item--food {
-    margin-right: 103px;
   }
 }

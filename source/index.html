@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.min.js"></script>
 
@@ -62,14 +65,25 @@
     </nav>
   </header>
   <main>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+    </div>
     <div class="intro">
       <h1 class="main-title">Функциональное
         питание для котов</h1>
       <b class="intro__slogan ">Занялся собой? Займись котом!</b>
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)"
+          srcset="img/index-can-desktop@1x.webp 1x,img/index-can-desktop@2x.webp 2x ">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/index-can-tablet@1x.webp 1x,img/index-can-tablet@2x.webp 2x ">
+        <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x,img/index-can-mobile@2x.webp 2x ">
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x,img/index-can-desktop@2x.png 2x ">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x,img/index-can-tablet@2x.jpg 2x ">
+        <img class="intro__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+          alt="Изображение банки питания для котов со вкусом курицы">
+      </picture>
       <a href="form.html" class="button intro__button ">Подобрать программу</a>
     </div>
-
     <section class="ration-programs center">
       <div class="ration-programs__item ration-programs__item--slim">
         <h3 class="ration-programs__header">Похудение</h3>
@@ -152,7 +166,7 @@
             <div class="toggle__controls">
               <div class="toggle__scale">
               </div>
-              <div class="toggle__button "></div>
+              <div class="toggle__button" aria-label="Переключатель слайдера"></div>
             </div>
             <a href="#" class="toggle__text">Стало</a>
           </div>
@@ -171,7 +185,6 @@
         ул. Большая Конюшенная, д. 19/8
         <span>Санкт-Петербург</span>
       </p>
-
     </div>
     <div class="map">
       <iframe
@@ -212,7 +225,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-          <svg width="26.943" height="34.09">
+          <svg width="27" height="34">
             <use xlink:href="#academy-link"></use>
           </svg>
         </div>
