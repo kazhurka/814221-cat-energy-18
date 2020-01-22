@@ -28,16 +28,18 @@
   .wrapper {
     position: absolute;
     top: 0;
+    left: 50%;
     z-index: -1;
 
-    width: 100%;
+    width: 50%;
     height: 696px;
     margin: 0 auto;
-    background: linear-gradient(to right, #ffffff, #ffffff 0%, #68b738 0%);
+
+    background-color: #68b738;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 109% 0;
-    background-size: 54% 100%;
+    background-position: 0 0;
+    background-size: 110% 100%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {

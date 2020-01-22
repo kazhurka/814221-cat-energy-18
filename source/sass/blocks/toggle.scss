@@ -65,6 +65,7 @@
 .toggle__button:active {
   border-color: #68b738;
   border-width: 2px;
+  left: 5px;
 }
 
 
@@ -133,7 +134,7 @@
     content: "";
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 39%;
 
     width: 8px;
     height: 8px;
@@ -148,6 +149,12 @@
 
   .toggle__button:active {
     border-color: #68b738;
+    left: 197px;
+    top: -8px;
+  }
+
+  .toggle__button:active::after {
+    left: 38%;
   }
 }
 
