@@ -32,6 +32,7 @@
 
   font-size: 16px;
   line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
 }
 
@@ -173,6 +174,7 @@
 
 .cat-form input:focus {
   border: 2px solid #444444;
+  padding-left: 15px;
 }
 
 .cat-form__radiobutton:hover + label::before {
@@ -280,6 +282,10 @@
     width: 630px;
     margin-bottom: 28px;
     padding-left: 90px;
+  }
+
+  .cat-form input:focus {
+    padding-left: 19px;
   }
 }
 
